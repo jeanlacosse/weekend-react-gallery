@@ -26,12 +26,24 @@ function App() {
    getGallery();
 }, [])
 
+
+const renderInfo = (thingsToRender) => {
+  console.log('things to render', thingsToRender)
+  return (
+        <li>{thingsToRender.description}</li>
+  )
+}
+
+
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
-        <GalleryList galleryList={galleryList}/>
+        <GalleryList 
+        galleryList={galleryList}
+        renderInfo={renderInfo}
+        />
       </div>
     );
 }
