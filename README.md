@@ -12,16 +12,16 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 TODO
     [x] npm install
         [x] add nodemon npm install nodemon --global
-    [] npm run server/client
+    [x] npm run server/client
 
 []IMGS
-    [] add some to the public/images file
+    [x] add some to the public/images file
         [] 100x100 px best size
-        []modify modules/data.js with:
-            [] id, title, description, path for
+        [x]modify modules/data.js with:
+            [x] id, title, description, path for
 
 [] components create
-    [] app
+    [x] app
     [] export each and import into app
     [] GalleryList
         [] create UL list and add item component
