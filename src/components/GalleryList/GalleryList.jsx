@@ -1,7 +1,7 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 function GalleryList ({
-    galleryList, 
+    galleryList, onClickLike
 }) {
     return (
         <>
@@ -10,9 +10,8 @@ function GalleryList ({
                 <GalleryItem 
                 listItem={listItem} 
                 key={listItem.id}
-                
+                onClickLike={onClickLike}
                 />
-               
             ))}
         </ul>
         </>

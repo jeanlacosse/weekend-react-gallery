@@ -15,8 +15,20 @@
 
 img {
   width: 150px;
+  margin-top: 5px;
 }
 
 div {
   padding: 75px;
+  margin-top: 5px;
+}
+
+#like-btn {
+  height: 40px;
+  width: 40px;
+}
+
+#like-count {
+  font-size: 25px;
+  margin-left: 10px;
 }
