@@ -14,26 +14,26 @@ TODO
         [x] add nodemon npm install nodemon --global
     [x] npm run server/client
 
-[]IMGS
+[x]IMGS
     [x] add some to the public/images file
-        [] 100x100 px best size
+        [x] 100x100 px best size
         [x]modify modules/data.js with:
             [x] id, title, description, path for
 
-[] components create
+[x] components create
     [x] app
-    [] export each and import into app
-    [] GalleryList
-        [] create UL list and add item component
-            [] map over the array
-    [] GalleryItem
-        [] create LI to place into the list
+    [x] export each and import into app
+    [x] GalleryList
+        [x] create UL list and add item component
+            [x] map over the array
+    [x] GalleryItem
+        [x] create LI to place into the list
 
 []APP
-    []Axios.get from /gallery
-        []pulls the items from the array
-            [] runs the GalleryList .map, which runs the Gallery Item 
-                [] appends all to DOM
+    [x]Axios.get from /gallery
+        [x]pulls the items from the array
+            [x] runs the GalleryList .map, which runs the Gallery Item 
+                [x] appends all to DOM
     
     [] imgItem onClick conditional rendering to show description I made for it
         [] may need to use true false boolean onClick for info

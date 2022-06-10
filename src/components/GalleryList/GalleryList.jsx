@@ -1,3 +1,5 @@
+import GalleryItem from '../GalleryItem/GalleryItem';
+
 function GalleryList ({
     galleryList
 }) {
@@ -5,7 +7,11 @@ function GalleryList ({
         <>
         <ul>
             {galleryList.map(listItem => (
-               <li>{listItem.id}</li> 
+                <GalleryItem 
+                listItem={listItem} 
+                key={listItem.id}
+                />
+               
             ))}
         </ul>
         </>
