@@ -27,14 +27,6 @@ function App() {
 }, [])
 
 
-const renderInfo = (thingsToRender) => {
-  console.log('things to render', thingsToRender)
-  return (
-        <li>{thingsToRender.description}</li>
-  )
-}
-
-
     return (
       <div className="App">
         <header className="App-header">
@@ -42,7 +34,7 @@ const renderInfo = (thingsToRender) => {
         </header>
         <GalleryList 
         galleryList={galleryList}
-        renderInfo={renderInfo}
+        // renderInfo={renderInfo}
         />
       </div>
     );

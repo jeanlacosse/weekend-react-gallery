@@ -1,7 +1,7 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 
 function GalleryList ({
-    galleryList, renderInfo
+    galleryList, 
 }) {
     return (
         <>
@@ -10,7 +10,7 @@ function GalleryList ({
                 <GalleryItem 
                 listItem={listItem} 
                 key={listItem.id}
-                renderInfo={renderInfo}
+                
                 />
                
             ))}
