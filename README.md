@@ -35,12 +35,34 @@ TODO
             [x] runs the GalleryList .map, which runs the Gallery Item 
                 [x] appends all to DOM
     
-    [] imgItem onClick conditional rendering to show description I made for it
-        [] may need to use true false boolean onClick for info
-    [] may want to create a component for the like button 
-        [] axios.put to update like count
-            [] update gallery to represent total likes
+    [x] imgItem onClick conditional rendering to show description I made for it
+        [x] may need to use true false boolean onClick for info
+    [x] may want to create a component for the like button 
+        [x] axios.put to update like count
+            [x] update gallery to represent total likes
 
    
+STRETCH
+[] move data into SQL file
+    [X] DB react_gallery
+    [X] Create sql file to store that info
+        [X] create table 'gallery'
+        [X] values (id, path, description, likes)
+    [x] pool.query w/ sqlText to get from DB
+
+[] Update component 
+    [] able to add a new gallery item
+        [] needs all input fields of the DB
+    [] axios post
+    [] router.post + pool.query
+
+[] Delete component
+    [] add btn into galleryItem for delete
+    [] deconstruct to send back deleted id
+        [] axios delete + router.delete + pool.query
+
+[] material UI
+    [] source in html
+    [] use their componenets to add styling
 
 [] Update README File
