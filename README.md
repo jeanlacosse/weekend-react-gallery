@@ -43,18 +43,18 @@ TODO
 
    
 STRETCH
-[] move data into SQL file
+[x] move data into SQL file
     [X] DB react_gallery
     [X] Create sql file to store that info
         [X] create table 'gallery'
         [X] values (id, path, description, likes)
     [x] pool.query w/ sqlText to get from DB
 
-[] Update component 
-    [] able to add a new gallery item
-        [] needs all input fields of the DB
-    [] axios post
-    [] router.post + pool.query
+[x] form component 
+    [x] able to add a new gallery item
+        [x] needs all input fields of the DB
+    [x] axios post
+    [x] router.post + pool.query
 
 [] Delete component
     [] add btn into galleryItem for delete
