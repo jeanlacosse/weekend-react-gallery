@@ -52,18 +52,29 @@ function App() {
       })
   }
 
+  const onClickDelete = (deleteItem) => {
+    axios.delete(`/gallery/delete/${deleteItem.id}`)
+      .then(response => {
+        getGallery();
+      })
+      .catch(err => {
+        alert('Error deleting Item');
+        console.log(err);
+      })
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <NewGalleryItem 
-      addGalleryItem={addGalleryItem}
+      <NewGalleryItem
+        addGalleryItem={addGalleryItem}
       />
       <GalleryList
         galleryList={galleryList}
         onClickLike={onClickLike}
+        onClickDelete={onClickDelete}
       />
     </div>
   );

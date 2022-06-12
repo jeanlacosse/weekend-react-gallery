@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import likeBtn from '../../like-btn.png'
 
 function GalleryItem({
-    listItem, onClickLike
+    listItem, onClickLike, onClickDelete
 
 }) {
     // set a new useState that will load on render. If false show img, if true show description
@@ -26,12 +26,16 @@ function GalleryItem({
 
             </li>
             {/* create a like button */}
-            <button
+            <span><button
                 onClick={() => { onClickLike(listItem) }}
             >
                 <img id='like-btn' src={likeBtn} alt="" />
             </button>
             <span id='like-count'>{listItem.likes}</span>
+            <button 
+                onClick={() => { onClickDelete(listItem)}}
+            >Delete Picture</button>
+            </span>
         </>
     )
 }
