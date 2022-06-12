@@ -48,4 +48,28 @@ router.get('/', (req, res) => {
         });
 }); // END GET Route
 
+
+router.post('/', (req, res) => {
+
+    const sqlText = `
+    INSERT INTO gallery (path, description) 
+    VALUES ($1, $2);
+    `
+    const sqlParams = [
+      req.body.path,
+      req.body.description,
+    ]
+  
+    pool.query(sqlText, sqlParams)
+      .then(() => {
+        res.sendStatus(201);
+        
+      })
+      .catch((err) => {
+        console.log('err is', err);
+        res.sendStatus(500)
+        
+      });
+  }); // END POST route
+  
 module.exports = router;
