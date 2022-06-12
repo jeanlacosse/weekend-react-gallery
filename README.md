@@ -56,10 +56,10 @@ STRETCH
     [x] axios post
     [x] router.post + pool.query
 
-[] Delete component
-    [] add btn into galleryItem for delete
-    [] deconstruct to send back deleted id
-        [] axios delete + router.delete + pool.query
+[x] Delete component
+    [x] add btn into galleryItem for delete
+    [x] deconstruct to send back deleted id
+        [x] axios delete + router.delete + pool.query
 
 [] material UI
     [] source in html

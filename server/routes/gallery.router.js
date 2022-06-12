@@ -72,4 +72,26 @@ router.post('/', (req, res) => {
       });
   }); // END POST route
   
+  router.delete('/delete/:id', (req, res) => {
+
+    const sqlQuery = `
+    DELETE FROM "gallery"
+    WHERE id = $1;
+    `;
+
+    sqlParams = [
+        req.params.id
+    ]
+  
+    pool.query(sqlQuery, sqlParams)
+      .then(() => {
+        res.sendStatus(200);
+      })
+      .catch((err) => {
+        console.log(`Delete to gallery failed`, err)
+        res.sendStatus(500)
+      });
+  }); // END DELETE route
+
+
 module.exports = router;
