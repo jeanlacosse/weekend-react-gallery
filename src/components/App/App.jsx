@@ -2,8 +2,13 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import React from 'react';
 import './App.css';
+// created components to run app
 import GalleryList from '../GalleryList/GalleryList';
 import NewGalleryItem from '../NewGalleryItem/NewGalleryItem';
+
+// Material UI components
+import ReactDOM from 'react-dom';
+import Button from '@mui/material/Button';
 
 
 function App() {
