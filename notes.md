@@ -20,3 +20,5 @@
         - this would have prevented using onClick twice and just applied it to the entire div, where setImg b/cm the opposite of what it currently is
 
 - all event ahndlers have an event object attached, cannot be called directly
+
+HEROKU
