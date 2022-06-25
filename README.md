@@ -1,68 +1,51 @@
 # Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+React Gallery 
 
 ## Description
+This project took three days to develop.
 
-Your project description goes here. What problem did you solve? How did you solve it?
+I wanted to create an app where a user would be able to see a list of pictures coming from a database. The user could like, or delete those photos.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+I was looking to use react in order to build interactive components with multiple functionalities. I also wanted to experiment with basic material-UI concepts.
+
+## Screen Shot 
+
+![alt text](./public/images/Screen%20Shot%202022-06-25%20at%2012.47.28%20PM.png)
+
+### Prerequisites
+
+- Node
+- React
+- Javascript
+- Axios
+- Material UI
 
 
-TODO
-    [x] npm install
-        [x] add nodemon npm install nodemon --global
-    [x] npm run server/client
+## Installation
 
-[x]IMGS
-    [x] add some to the public/images file
-        [x] 100x100 px best size
-        [x]modify modules/data.js with:
-            [x] id, title, description, path for
+1. Create a database named `react_gallery`,
+2. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. I recommend using Postico to run those queries as that was used to create the queries, 
+3. Open up your editor of choice and run an `npm install`
+4. Run `npm run server` in your terminal
+5. Run `npm run client` in your terminal
+6. The `npm run client` command will open up a new browser tab for you!
 
-[x] components create
-    [x] app
-    [x] export each and import into app
-    [x] GalleryList
-        [x] create UL list and add item component
-            [x] map over the array
-    [x] GalleryItem
-        [x] create LI to place into the list
+## Usage
 
-[]APP
-    [x]Axios.get from /gallery
-        [x]pulls the items from the array
-            [x] runs the GalleryList .map, which runs the Gallery Item 
-                [x] appends all to DOM
-    
-    [x] imgItem onClick conditional rendering to show description I made for it
-        [x] may need to use true false boolean onClick for info
-    [x] may want to create a component for the like button 
-        [x] axios.put to update like count
-            [x] update gallery to represent total likes
+1. A user is able to browse the presented pictures, or add a photo oftheir own from a local file
+2. The user is able to click the delete button to delete a photo from the database
+3. Clicking the like button will show a new like under the picture
 
-   
-STRETCH
-[x] move data into SQL file
-    [X] DB react_gallery
-    [X] Create sql file to store that info
-        [X] create table 'gallery'
-        [X] values (id, path, description, likes)
-    [x] pool.query w/ sqlText to get from DB
+## Built With
 
-[x] form component 
-    [x] able to add a new gallery item
-        [x] needs all input fields of the DB
-    [x] axios post
-    [x] router.post + pool.query
+- Node
+- React
+- Javascript
+- Axios
+- Material UI
 
-[x] Delete component
-    [x] add btn into galleryItem for delete
-    [x] deconstruct to send back deleted id
-        [x] axios delete + router.delete + pool.query
+## Acknowledgement
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
 
-[] material UI
-    [] source in html
-    [] use their componenets to add styling
-
-[] Update README File
+## Support
+If you have suggestions or issues, please email me at [jeanlacosse@gmail.com](www.google.com)
